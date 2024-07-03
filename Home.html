@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="Stylesheet" href="Style.css">
+
+</head>
+
+
+
+<body>
+
+
+    <div class="full-page">
+
+        <!--Here the header above the page-->
+        <div class="navbar">
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a>To Do list</a></li>
+                    <li><a href='Calculator.html'>Calculator</a></li>
+                    <li><a href='QuizTest.html'>Quiz</a></li>
+                    <li><a href="RandomQ.html">Random Quiz</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
+                            style="width: auto;">Login</button></li>
+                </ul>
+            </nav>
+        </div>
+        <!--End of the header-->
+        <br>
+
+        <!--Now let's start the TODO system-->
+        <header>
+
+            <h1>To do list:</h1><br>
+            <form id="New-form">
+                <input type="text" id="new-task" placeholder="Enter task">
+                <input type="submit" id="new-submit" value="Add">
+            </form>
+        </header>
+
+        <main>
+
+            <section class="task-list">
+                <h2>Your tasks:</h2>
+                <div id="tasks">
+                
+                </div>
+
+            </section>
+
+        </main>
+    </div> <!--End of the div if the full page-->
+    <script src="Js.js"></script>
+</body>
+
+</html>

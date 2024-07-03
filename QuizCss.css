@@ -1,0 +1,191 @@
+/* Reset the margin, padding, and box-sizing for all elements */
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Set styles for a full-page element with a background image */
+.full-page {
+height: 100%;
+width: 100%;
+background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(leaves.jpg);
+background-position: center;
+background-size: cover;
+position: absolute;
+}
+
+/* Styles for the navbar */
+.navbar {
+display: flex;
+align-items: center;
+padding: 20px;
+padding-left: 50px;
+padding-right: 30px;
+padding-top: 50px;
+}
+
+/* Styles for the navigation menu */
+nav {
+flex: 1;
+text-align: left;
+}
+
+nav ul {
+display: inline-block;
+list-style: none;
+}
+
+nav ul li {
+display: inline-block;
+margin-right: 70px;
+color: white;
+font-family: sans-serif;
+font-weight: bold;
+}
+
+nav ul li a {
+text-decoration: none;
+font-size: 20px;
+color: white;
+font-family: sans-serif;
+}
+
+nav ul li button {
+font-size: 20px;
+color: white;
+outline: none;
+border: none;
+background: transparent;
+cursor: pointer;
+font-family: sans-serif;
+}
+
+nav ul li button:hover {
+color: rgb(208, 56, 143);
+}
+
+nav ul li a:hover {
+color: rgb(208, 56, 143);
+}
+
+/* Styles for a quiz app container */
+.QuizApp {
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 2rem;
+padding: 1rem;
+}
+
+/* Styles for the quiz container */
+.QuizApp .Quiz {
+background-color: rgba(0, 0, 0, 0.7);
+display: flex;
+flex-direction: column;
+padding: 2rem;
+justify-content: center;
+border-radius: 2rem;
+}
+
+/* Styles for the question and result elements */
+#Q {
+display: flex;
+border-radius: 1.5rem;
+color: #ffffff;
+font-weight: bold;
+}
+
+#Result {
+display: flex;
+border-radius: 1.5rem;
+color: #ffffff;
+font-weight: bold;
+font-size: larger;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Styles for the answers container */
+#AnswersB {
+display: flex;
+flex-direction: column;
+padding: 1rem;
+color: #c2abcf;
+font-weight: 400;
+font-family: 'Times New Roman', Times, serif;
+}
+
+/* Styles for the buttons */
+.btn {
+color: #ffffff;
+background-color: rgba(44, 68, 44, 0.7);
+border-radius: 1rem;
+border: none;
+padding: 1rem;
+margin: 0.5rem;
+font-weight: 500;
+}
+
+/* Styles for the link-like buttons */
+b a {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-decoration: none;
+color: #ffffff;
+background-color: rgba(44, 68, 44, 0.7);
+border-radius: 1rem;
+border: none;
+padding: 1.2rem;
+margin: 0.5rem;
+font-weight: 500;
+}
+
+/* Styles for the "Next" button */
+#Next, #NextJS, #NextHtml, #NextCss {
+color: #3c624b;
+background-color: rgba(255, 255, 255, 0.87);
+border-radius: 2rem;
+border: none;
+padding: 1rem;
+margin: 0.5rem;
+font-weight: 900;
+font-size: 1rem;
+font-family: 'Times New Roman', Times, serif;
+}
+
+/* Hover and active styles for the buttons */
+#Next:hover:not([disabled]),
+#NextJS:hover,
+#NextHtml:hover,
+#NextCss:hover,
+b a:hover,
+.btn:hover:not([disabled]) {
+background-image: linear-gradient(rgba(92, 92, 92, 0.301), rgba(122, 116, 116, 0.171));
+}
+
+/* Disabled styles for the buttons */
+#Next:disabled,
+.btn:disabled {
+background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+cursor: no-drop;
+}
+
+/* Active styles for the buttons */
+#Next:active,
+#NextJS:active,
+#NextHtml:active,
+#NextCss:active,
+.btn:active,
+b a:active {
+transform: translateY(2px);
+}
+
+/* Styles for correct and incorrect answers */
+.Correct {
+background-color: rgb(118, 245, 118);
+}
+.Incorrect {
+background-color: rgb(255, 55, 55);
+}

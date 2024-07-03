@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="Stylesheet" href="QuizCss.css">
+
+</head>
+
+<body>
+
+    <div class="full-page">
+
+        <!--Here the header above the page-->
+        <div class="navbar">
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='Home.html'>To Do list</a></li>
+                    <li><a href='Calculator.html'>Calculator</a></li>
+                    <li><a href="QuizTest.html">Quiz</a></li>
+                    <li><a href="RandomQ.html">Random Quiz</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
+                            style="width: auto;">Login</button></li>
+                </ul>
+            </nav>
+        </div>
+        <!--End of the header-->
+        <div class="QuizApp">
+
+<div class="Quiz">
+<b id="Q"></b>
+<div id="AnswersB">
+</div>
+<p id="Result"></p><br>
+<button id="NextHtml"></button>
+<button id="NextJS"></button>
+<button id="NextCss"></button>
+</div>
+
+    </div>
+    <!--End of the div if the full page-->
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="QuizJsTest.js"></script>
+    <br>
+</body>
+
+</html>

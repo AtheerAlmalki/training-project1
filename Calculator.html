@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="Stylesheet" href="StyleCalculator.css">
+
+</head>
+
+<body>
+
+    <div class="full-page">
+
+        <!--Here the header above the page-->
+        <div class="navbar">
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='Home.html'>To Do list</a></li>
+                    <li><a>Calculator</a></li>
+                    <li><a href='QuizTest.html'>Quiz</a></li>
+                    <li><a href="RandomQ.html">Random Quiz</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
+                            style="width: auto;">Login</button></li>
+                </ul>
+            </nav>
+        </div>
+
+        <br><br>
+        <div class="App">
+
+            <div class="Calculator">
+
+                <div class="display">
+                    <div class="content">
+                        <div class="input">
+                            <span class="operator"></span> 
+                        </div>
+                        <div class="output"></div>
+                    </div>
+                </div>
+
+                <div class="keys">
+
+                    <div data-key="clear" class="key action">
+                        <span>AC</span>
+                    </div>
+    
+                    <div data-key="brackets" class="key action">
+                        <span>( )</span>
+                    </div>
+    
+                    <div data-key="%" class="key action">
+                        <span>%</span>
+                    </div>
+    
+                    <div data-key="/" class="key operator">
+                        <span>÷</span>
+                    </div>
+    
+                    <div data-key="7" class="key">
+                        <span>7</span>
+                    </div>
+    
+                    <div data-key="8" class="key">
+                        <span>8</span>
+                    </div>
+    
+                    <div data-key="9" class="key">
+                        <span>9</span>
+                    </div>
+    
+                    <div data-key="*" class="key operator">
+                        <span>x</span>
+                    </div>
+    
+                    <div data-key="4" class="key">
+                        <span>4</span>
+                    </div>
+    
+                    <div data-key="5" class="key">
+                        <span>5</span>
+                    </div>
+    
+                    <div data-key="6" class="key">
+                        <span>6</span>
+                    </div>
+    
+                    <div data-key="-" class="key operator">
+                        <span>-</span>
+                    </div>
+    
+                    <div data-key="1" class="key">
+                        <span>1</span>
+                    </div>
+    
+                    <div data-key="2" class="key">
+                        <span>2</span>
+                    </div>
+    
+                    <div data-key="3" class="key">
+                        <span>3</span>
+                    </div>
+    
+                    <div data-key="+" class="key operator">
+                        <span>+</span>
+                    </div>
+    
+                    <div data-key="backspace" class="key action">
+                        <span>Del</span>
+                    </div>
+    
+                    <div data-key="0" class="key">
+                        <span>0</span>
+                    </div>
+    
+                    <div data-key="." class="key">
+                        <span>.</span>
+                    </div>
+                    
+                    <div data-key="=" class="key operator">
+                        <span>=</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="JsCalculator.js"></script>
+</body>
+
+</html>
